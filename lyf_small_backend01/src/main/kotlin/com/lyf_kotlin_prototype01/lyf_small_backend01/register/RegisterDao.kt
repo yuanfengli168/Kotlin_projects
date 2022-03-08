@@ -18,26 +18,28 @@ what is the equivalent in the sprint data???
 
 * */
 @Repository
-open class RegisterDao(@Autowired sessionFactory: SessionFactory) {
-    var sessionFactory = sessionFactory
+//open class RegisterDao(@Autowired sessionFactory: SessionFactory) {
+open class RegisterDao() {
+
+//    var sessionFactory = sessionFactory
 
     fun register(user: UserEntity): Boolean {
-        var session: Session
-        try {
-            session = sessionFactory.openSession()    // type mismatch: spring session != hibernate's session Factory.
-            session.beginTransaction();
-            session.save(user)
-            session.getTransaction().commit();
-        }
-        // there is no multiple catch in Kotlin yet:
-        catch (ex: Exception) {
-            ex.printStackTrace();
-            return false;
-        }
-
-        finally {
-            session.close()
-        }
+//        var session: Session
+//        try {
+//            session = sessionFactory.openSession()    // type mismatch: spring session != hibernate's session Factory.
+//            session.beginTransaction();
+//            session.save(user)
+//            session.getTransaction().commit();
+//        }
+//        // there is no multiple catch in Kotlin yet:
+//        catch (ex: Exception) {
+//            ex.printStackTrace();
+//            return false;
+//        }
+//
+//        finally {
+//            session.close()
+//        }
         return true
     }
 }
