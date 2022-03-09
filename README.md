@@ -16,3 +16,9 @@ Resources:
 3. other helpful debugging materials can be found here with 0308/0307 as the date [doc link](https://docs.google.com/document/d/176FhO8TLhA75-_DzcyMtiAMICzVlVHp3zYnUq_CJIBQ/edit?usp=sharing)
 4. My summary and showcase in a video can be found [here](https://youtu.be/F3sz-AU1q-I)
 5. prototype in MarchSeventh package, enjoy!
+
+
+## 0309 - ...: 
+1. optimizing controller, adding posting method, using postman to test
+2. (optional) adding service level
+3. 
