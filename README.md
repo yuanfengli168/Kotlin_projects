@@ -21,4 +21,11 @@ Resources:
 ## 0309 - ...: 
 1. optimizing controller, adding posting method, using postman to test
 2. (optional) adding service level
-3. 
+
+## 0314 - ...: 
+1. has been reading _Spring in Action_
+2. using JPA (Java Persistence API) and JDBC (Java Database Connectivity)
+3. I have upgraded the MarchSeventh to MarchThirteenth, which has better structures, and more functions, the postman tests are here:
+   - https://go.postman.co/workspace/My-Workspace~9b98a38e-dff7-4a21-8861-8dc6e21b6426/collection/18812364-a8054686-6d65-4ff5-8792-6e278e6d48b4?action=share&creator=18812364
+4. keep working on Kotlin/OAth 2.0/etc ...
+5. 
