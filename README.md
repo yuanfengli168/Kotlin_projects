@@ -28,4 +28,16 @@ Resources:
 3. I have upgraded the MarchSeventh to MarchThirteenth, which has better structures, and more functions, the postman tests are here:
    - https://go.postman.co/workspace/My-Workspace~9b98a38e-dff7-4a21-8861-8dc6e21b6426/collection/18812364-a8054686-6d65-4ff5-8792-6e278e6d48b4?action=share&creator=18812364
 4. keep working on Kotlin/OAth 2.0/etc ...
-5. 
+
+## 0315 - ...: 
+1. Doing some research on Projection in Spring: there are two good urls: 
+   1. [spring data jpa projections](https://www.baeldung.com/spring-data-jpa-projections)
+   2. [详解 spring data jpa 之投影](https://m.yisu.com/zixun/215930.html)
+2. Research on OAth2.0's 4 different patterns: 
+   1. [Outh2协议有哪四种授权模式？](https://blog.csdn.net/qq_45076180/article/details/117364161): 1)authorization code; 2) password; 3) implicit; 4) client_credentials
+      1. things to know: their difference
+      2. things to know: their application scenarios
+3. Research on the 常用微服务工具链： 
+   1. [微服务架构 - 宏观需要了解的东西](https://www.zhihu.com/question/24013141)
+   2. [微服务工具](https://www.infoq.cn/article/jdfmjp6cwppvogu4heww)
+   3. [微服务架构中的常用开源工具](https://www.jianshu.com/p/64ecd80536a2)
