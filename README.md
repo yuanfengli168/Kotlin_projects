@@ -41,3 +41,5 @@ Resources:
    1. [微服务架构 - 宏观需要了解的东西](https://www.zhihu.com/question/24013141)
    2. [微服务工具](https://www.infoq.cn/article/jdfmjp6cwppvogu4heww)
    3. [微服务架构中的常用开源工具](https://www.jianshu.com/p/64ecd80536a2)
+4. Research on JPA in spring boot, again T-T ...
+   1. [Java persistence API - Tutorial](https://www.vogella.com/tutorials/JavaPersistenceAPI/article.html#:~:text=JPA%20permits%20the%20developer%20to,is%20defined%20via%20persistence%20metadata.)
