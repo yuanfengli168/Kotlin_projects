@@ -43,3 +43,8 @@ Resources:
    3. [微服务架构中的常用开源工具](https://www.jianshu.com/p/64ecd80536a2)
 4. Research on JPA in spring boot, again T-T ...
    1. [Java persistence API - Tutorial](https://www.vogella.com/tutorials/JavaPersistenceAPI/article.html#:~:text=JPA%20permits%20the%20developer%20to,is%20defined%20via%20persistence%20metadata.)
+
+## 0317 - ...:
+   1. OAuth 2.0 different type has been learned and understand, each implementing scenarios has been discussed. 
+   2. Clean the code on my local drive, - MarchThirteenth, including migration service and logic from data access layer to logic layer. etc. 
+   3. (optional) will update the code here on github repo. 
