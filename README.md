@@ -48,3 +48,16 @@ Resources:
    1. OAuth 2.0 different type has been learned and understand, each implementing scenarios has been discussed. 
    2. Clean the code on my local drive, - MarchThirteenth, including migration service and logic from data access layer to logic layer. etc. 
    3. (optional) will update the code here on github repo. 
+
+## 0324 - ...:
+Working on researching the spring security including:
+
+   1. Authentication
+   2. Authorization
+   3. Web security - filters in spring
+   4. Threads and Processing methods Asynchronously 
+
+Here are two very good resources:
+- [Original Guide on Spring.io](https://spring.io/guides/topicals/spring-security-architecture)
+- [Chinese version and more explanation](https://blog.csdn.net/chuixue24/article/details/89382434)
+- [My personal notes with according dates](https://docs.google.com/document/d/176FhO8TLhA75-_DzcyMtiAMICzVlVHp3zYnUq_CJIBQ/edit#)
