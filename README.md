@@ -61,3 +61,4 @@ Here are two very good resources:
 - [Original Guide on Spring.io](https://spring.io/guides/topicals/spring-security-architecture)
 - [Chinese version and more explanation](https://blog.csdn.net/chuixue24/article/details/89382434)
 - [My personal notes with according dates](https://docs.google.com/document/d/176FhO8TLhA75-_DzcyMtiAMICzVlVHp3zYnUq_CJIBQ/edit#)
+- [17.8k projects](https://github.com/elunez/eladmin)
