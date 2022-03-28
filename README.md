@@ -62,3 +62,11 @@ Here are two very good resources:
 - [Chinese version and more explanation](https://blog.csdn.net/chuixue24/article/details/89382434)
 - [My personal notes with according dates](https://docs.google.com/document/d/176FhO8TLhA75-_DzcyMtiAMICzVlVHp3zYnUq_CJIBQ/edit#)
 - [17.8k projects](https://github.com/elunez/eladmin)
+
+## 0328 - ...:
+1. Researching on spring config: [here](https://spring.io/projects/spring-cloud-config)
+2. Researching on spring Consul: [here](https://spring.io/projects/spring-cloud-consul)
+- Continuing projects: 
+  1. Refactorings code in MarchThirteenth locally and then version control... in 2 weeks. 
+  2. Redo the precious java project by my self only in ... 2 months.
+  3. Redo the previous project written by java to Kotlin in ... 1 month.
