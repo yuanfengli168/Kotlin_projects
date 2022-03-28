@@ -31,14 +31,6 @@ class SaveDao {
                 return false
             }
         }
-
-        // it can not do it, since the id is auto generating, so
-        // when you enter, it will auto generate an id!!
-//        var id = saveBody.getSaveCustomer().id
-//        if (repository.existsById(id)) {
-//            return false
-//        }
-
         repository.save(saveBody.getSaveCustomer())
         return true;
     }
@@ -56,31 +48,8 @@ class SaveDao {
         return repository.findByLastName(lastName)
     }
 
-//    @Modifying
-//    @Transactional
-//    @Query(
-//        value = "truncate table customer",
-//        nativeQuery = true
-//    )
-//    fun truncateAll() = true
-
     @Transactional
     fun deleteTableCustomer(tableName: String): Boolean  {
-//        if (repository != null) {
-//            entityManager.remove(repository)
-//            return true
-//        }
-
-//        var flag = 1
-//        try {
-//            entityManager.remove(repository)
-//        } catch (e: Exception) {
-//            flag = 0
-//            println("Some Error happend when removing table Customer")
-//        } finally {
-//            return flag == 1
-//        }
-
         var flag = 1
         try {
             var query: String = "DROP TABLE IF EXISTS :tableName"
@@ -92,7 +61,6 @@ class SaveDao {
             return flag == 1
         }
     }
-
 
     // truncateAll delete all contents,
     // but remain to use the same sequence for id generation
