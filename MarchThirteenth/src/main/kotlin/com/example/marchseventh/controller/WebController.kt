@@ -11,11 +11,17 @@ import org.springframework.web.bind.annotation.*
 import javax.servlet.http.HttpServletResponse
 import com.example.marchseventh.entity.request.SaveBody
 import com.example.marchseventh.service.SaveService
+import org.apache.coyote.Request
 import org.apache.coyote.Response
 import org.springframework.http.HttpStatus
 import javax.persistence.EntityManager
 import javax.persistence.PersistenceContext
 
+/**
+ * WebController manage service with GET, POST, and DELETE so far
+ * @author      Yuanfeng Li
+ * @version     2.0, 03/28/2022
+ */
 @RestController
 class WebController {
     @Autowired
@@ -38,7 +44,10 @@ class WebController {
     fun findById(@RequestParam("id") id: Long) = saveService.findById(id)
 
     @RequestMapping(path = ["customers"], method = [RequestMethod.GET], params = ["lastName"])
-    fun findByLastName(@RequestParam("lastName") lastName : String) = saveService.findByLastName(lastName)
+    fun findByLastName(@RequestParam("lastName") lastName: String) = saveService.findByLastName(lastName)
+
+    @RequestMapping(path = ["customers"], method = [RequestMethod.GET], params = ["firstName"])
+    fun findByFirstName(@RequestParam("firstName") firstName: String) = saveService.findByFirstName(firstName)
 
     @RequestMapping(path = ["customers"], method = [RequestMethod.DELETE])
     fun truncateAll(): ResponseEntity<*> {
@@ -47,7 +56,7 @@ class WebController {
     }
 
     @RequestMapping(path = ["customer"], method = [RequestMethod.DELETE], params = ["deleteId"])
-    fun truncateById(@RequestParam("deleteId") deleteId : Long) : ResponseEntity<*> {
+    fun truncateById(@RequestParam("deleteId") deleteId: Long) : ResponseEntity<*> {
         if (!saveService.truncateById(deleteId)) {
             return ResponseEntity.ok(mapOf("error" to "can't delete $deleteId in db, something went wrong!"))
         }

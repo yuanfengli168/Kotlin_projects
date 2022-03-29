@@ -44,6 +44,9 @@ class SaveService {
         return saveDao.findByLastName(lastName)
     }
 
+    fun findByFirstName(firstName: String): Iterable<Customer> {
+        return saveDao.findByFirstName(firstName)
+    }
 
     fun truncateAll(): Boolean {
         return saveDao.truncateAll()

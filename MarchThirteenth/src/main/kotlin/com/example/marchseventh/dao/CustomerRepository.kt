@@ -12,4 +12,6 @@ interface CustomerRepository : JpaRepository<Customer, Long> {
     // https://www.baeldung.com/spring-data-derived-queries
     // why it worked? because it is called Derived Query Methods in Spring Data JPA Repos
     fun findByLastName(lastName: String): Iterable<Customer>
+
+    fun findByFirstName(firstName: String): Iterable<Customer>
 }

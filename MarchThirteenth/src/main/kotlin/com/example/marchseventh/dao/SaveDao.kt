@@ -15,7 +15,7 @@ import javax.persistence.SequenceGenerator
  * SaveDao connects to Postgres,
  * My rule is to make it as clean as possible, all the logic is in service.kt files.
  * @author      Yuanfeng Li
- * @version     2.0, 03/28/2022
+ * @version     2.1, 03/28/2022
  *
  */
 @Repository
@@ -49,6 +49,10 @@ class SaveDao {
     // Did not write try and catch
     fun findByLastName(lastName: String): Iterable<Customer> {
         return repository.findByLastName(lastName)
+    }
+
+    fun findByFirstName(firstName: String): Iterable<Customer> {
+        return repository.findByFirstName(firstName)
     }
 
     // truncateAll delete all contents,
