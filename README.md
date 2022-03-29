@@ -79,8 +79,12 @@ Here are two very good resources:
          1. The @PersistenceContext annotation in your code is being used to indicate that the EntityManager must be automatically injected, in other words its lifecycle will be managed by the container running your application (which is a good thing).Sep 8, 2017
          [link here](https://stackoverflow.com/questions/46114254/spring-boot-persistence-context-annotation#:~:text=The%20%40PersistenceContext%20annotation%20in%20your,which%20is%20a%20good%20thing)
       3. Deleted deleteTableCustomer method in SaveDao.kt as well, due to the reason that we generally do not manage tables in our DAO code, 
-      if you want to delete code, please manage them using SQL database system for more security. 
-4. 
+      if you want to delete code, please manage them using SQL database system for more security.
+   6. SaveBody is not necessary as well, so try a method to change it!
+
+
+
+
 - Continuing projects: 
   1. Refactorings code in MarchThirteenth locally and then version control... in 2 weeks. 
   2. Redo the precious java project by my self only in ... 2 months.

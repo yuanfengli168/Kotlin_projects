@@ -9,12 +9,7 @@ import org.springframework.data.jpa.repository.Query
 
 @Repository
 interface CustomerRepository : JpaRepository<Customer, Long> {
+    // https://www.baeldung.com/spring-data-derived-queries
+    // why it worked? because it is called Derived Query Methods in Spring Data JPA Repos
     fun findByLastName(lastName: String): Iterable<Customer>
-
-    @Modifying
-    @Query(
-        value = "truncate table Customer",
-        nativeQuery = true
-    )
-    fun truncateMyTable()
 }

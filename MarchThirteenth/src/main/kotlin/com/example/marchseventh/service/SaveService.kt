@@ -17,8 +17,20 @@ class SaveService {
     lateinit var saveDao: SaveDao
 
     fun save(saveBody: SaveBody): Boolean {
-        return saveDao.save(saveBody)
+        val customer = saveBody.getSaveCustomer()
+        val firstName = customer.firstName
+        val lastName = customer.lastName
+
+        val people: Iterable<Customer> = findByLastName(lastName)
+        people.forEach{
+            if (it.firstName == firstName) {
+                return false
+            }
+        }
+        saveDao.save(customer)
+        return true
     }
+
 
     fun findAll(): List<*> {
         return saveDao.findAll()

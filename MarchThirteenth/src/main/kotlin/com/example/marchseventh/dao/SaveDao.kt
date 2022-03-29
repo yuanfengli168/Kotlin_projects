@@ -11,26 +11,24 @@ import javax.persistence.EntityManager
 import javax.persistence.PersistenceContext
 import javax.persistence.SequenceGenerator
 
+/**
+ * SaveDao connects to Postgres,
+ * My rule is to make it as clean as possible, all the logic is in service.kt files.
+ * @author      Yuanfeng Li
+ * @version     2.0, 03/28/2022
+ *
+ */
 @Repository
-
 class SaveDao {
     @Autowired
     lateinit var repository: CustomerRepository
 
-    fun save(saveBody: SaveBody): Boolean {
-        // can not exist one with same name and same last name
-        var customer = saveBody.getSaveCustomer()
-        var firstName = customer.firstName
-        var lastName = customer.lastName
-
-        var people: Iterable<Customer> = repository.findByLastName(lastName)
-        people.forEach {
-            if (it.firstName == firstName) {
-                return false
-            }
+    fun save(customer: Customer) {
+        try {
+            repository.save(customer)
+        } catch (e: Exception) {
+            e.printStackTrace()
         }
-        repository.save(saveBody.getSaveCustomer())
-        return true;
     }
 
 
@@ -38,10 +36,17 @@ class SaveDao {
         return repository.findAll()
     }
 
+
     fun findById(id: Long): Optional<Customer> {
-        return repository.findById(id)
+        return try {
+            repository.findById(id)
+        } catch (e: Exception) {
+            e.printStackTrace()
+            Optional.empty()
+        }
     }
 
+    // Did not write try and catch
     fun findByLastName(lastName: String): Iterable<Customer> {
         return repository.findByLastName(lastName)
     }
@@ -49,26 +54,22 @@ class SaveDao {
     // truncateAll delete all contents,
     // but remain to use the same sequence for id generation
     fun truncateAll(): Boolean {
-        var flag = 1  // 1 means true, 0 means false
-        try {
+        return try {
             repository.deleteAll()
-        } catch (e: Exception) {
-            println("$e")
-            flag = 0
-        } finally {
-            return flag == 1
+            true
+        } catch (e: Exception){
+            e.printStackTrace()
+            false
         }
     }
 
     fun truncateById(id: Long): Boolean {
-        var flag: Int = 1 // 1 means true, 0 means false
-        try {
+        return try {
             repository.deleteById(id)
+            true
         } catch (e: Exception) {
-            println("$e")
-            flag = 0
-        } finally {
-            return flag == 1
+            e.printStackTrace()
+            false
         }
     }
 }
