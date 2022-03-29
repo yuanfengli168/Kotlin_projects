@@ -66,6 +66,11 @@ Here are two very good resources:
 ## 0328 - ...:
 1. Researching on spring config: [here](https://spring.io/projects/spring-cloud-config)
 2. Researching on spring Consul: [here](https://spring.io/projects/spring-cloud-consul)
+3. Code Refactoring on WebController in MarchThirteenth: 
+   1. Uri optimized with less verb, more nouns
+   2. Differentiate uris with different @RequestMapping body code, such as params, method, path
+   3. Changed @PathVariable to @RequestParam
+
 - Continuing projects: 
   1. Refactorings code in MarchThirteenth locally and then version control... in 2 weeks. 
   2. Redo the precious java project by my self only in ... 2 months.
