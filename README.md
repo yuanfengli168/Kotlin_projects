@@ -80,13 +80,22 @@ Here are two very good resources:
          [link here](https://stackoverflow.com/questions/46114254/spring-boot-persistence-context-annotation#:~:text=The%20%40PersistenceContext%20annotation%20in%20your,which%20is%20a%20good%20thing)
       3. Deleted deleteTableCustomer method in SaveDao.kt as well, due to the reason that we generally do not manage tables in our DAO code, 
       if you want to delete code, please manage them using SQL database system for more security.
-   6. SaveBody is not necessary as well, so try a method to change it!
-
-
-
-
+   6. SaveBody is not necessary as well, so try a method to change it! (optional - will do it in future)
 - Continuing projects: 
   1. Refactorings code in MarchThirteenth locally and then version control... in 2 weeks. 
   2. Redo the precious java project by my self only in ... 2 months.
   3. Redo the previous project written by java to Kotlin in ... 1 month.
-  4. 
+
+## 0329 - ...:
+1. how to add files in gitignore after pushed it to repo on Github? [here](https://stackoverflow.com/questions/4308610/how-to-ignore-certain-files-in-git), in summary: git rm --cached name_of_file, will work.
+
+- Continuing projects:
+   1. Refactorings code in MarchThirteenth locally and then version control... in 2 weeks.
+   2. Redo the precious java project by my self only in ... 2 months.
+   3. Redo the previous project written by java to Kotlin in ... 1 month.
+- Continue Readings - due in one week: 
+   4. (readings) - Iglesias' Chapter 3 - Creating Restful Services, [here](file:///C:/Users/Jacky/OneDrive/Desktop/02272022%20-%20%E4%BA%BA%E7%94%9F%E6%88%90%E9%95%BF/Backend%20books/Hands-On%20Microservices%20with%20Kotlin%20Build%20reactive%20and%20cloud-native%20microservices%20with%20Kotlin%20using%20Spring%205%20and%20Spring%20Boot...%20(Juan%20Antonio%20Medina%20Iglesias)%20(z-lib.org).pdf)
+   5. (readings) - Iglesias' Chapter 5 - Reactive repository && from CRUD to REST.
+   6. (readings) - Iglesias' chapter 6 - spring cloud and configuration.
+   7. (readings) - Researching on spring config: [here](https://spring.io/projects/spring-cloud-config)
+   8. (readings) - Researching on spring Consul: [here](https://spring.io/projects/spring-cloud-consul)
