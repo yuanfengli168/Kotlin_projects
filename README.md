@@ -68,10 +68,21 @@ Here are two very good resources:
 2. Researching on spring Consul: [here](https://spring.io/projects/spring-cloud-consul)
 3. Code Refactoring on WebController in MarchThirteenth: 
    1. Uri optimized with less verb, more nouns
-   2. Differentiate uris with different @RequestMapping body code, such as params, method, path
+   2. Differentiate uris with different @RequestMapping body code, such as params, method, path; Its called URIs overloading. 
+   A very good resource to read on [stack over flow - Accessing multiple controllers with same request mapping](https://stackoverflow.com/questions/34587254/accessing-multiple-controllers-with-same-request-mapping#:~:text=Unfortunately%2C%20this%20is%20not%20possible,request%20should%20be%20mapped%20to.)
+   ; In summary, you can overloading in one class with additional information, but please don't create more confusion in different classes. 
    3. Changed @PathVariable to @RequestParam
-
+   4. Created new uri with new postman tests: [Postman import link](https://go.postman.co/workspace/My-Workspace~9b98a38e-dff7-4a21-8861-8dc6e21b6426/collection/18812364-499335b9-bf43-45a3-90a5-724b93edc103?action=share&creator=18812364)
+   5. Deprecated entityManager in WebController.kt and SaveDao.kt, reasons are: 
+      1. We usually don't need to access the EntityManager directly when working on a Spring Data application. [online link](https://www.baeldung.com/spring-data-entitymanager)
+      2. Deleted @PersistenceContext as well, but what does it mean?
+         1. The @PersistenceContext annotation in your code is being used to indicate that the EntityManager must be automatically injected, in other words its lifecycle will be managed by the container running your application (which is a good thing).Sep 8, 2017
+         [link here](https://stackoverflow.com/questions/46114254/spring-boot-persistence-context-annotation#:~:text=The%20%40PersistenceContext%20annotation%20in%20your,which%20is%20a%20good%20thing)
+      3. Deleted deleteTableCustomer method in SaveDao.kt as well, due to the reason that we generally do not manage tables in our DAO code, 
+      if you want to delete code, please manage them using SQL database system for more security. 
+4. 
 - Continuing projects: 
   1. Refactorings code in MarchThirteenth locally and then version control... in 2 weeks. 
   2. Redo the precious java project by my self only in ... 2 months.
   3. Redo the previous project written by java to Kotlin in ... 1 month.
+  4. 

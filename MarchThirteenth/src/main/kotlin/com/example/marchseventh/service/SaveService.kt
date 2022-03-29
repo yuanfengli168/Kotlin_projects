@@ -41,9 +41,5 @@ class SaveService {
         return saveDao.truncateById(id)
     }
 
-    fun deleteTableCustomer(tableName: String): Boolean {
-        return saveDao.deleteTableCustomer(tableName)
-    }
-
 
 }

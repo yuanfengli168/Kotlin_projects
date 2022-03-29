@@ -16,8 +16,6 @@ import javax.persistence.SequenceGenerator
 class SaveDao {
     @Autowired
     lateinit var repository: CustomerRepository
-    @PersistenceContext
-    lateinit var entityManager: EntityManager
 
     fun save(saveBody: SaveBody): Boolean {
         // can not exist one with same name and same last name
@@ -48,20 +46,6 @@ class SaveDao {
         return repository.findByLastName(lastName)
     }
 
-    @Transactional
-    fun deleteTableCustomer(tableName: String): Boolean  {
-        var flag = 1
-        try {
-            var query: String = "DROP TABLE IF EXISTS :tableName"
-            entityManager.createNativeQuery(query).setParameter("tableName", tableName).executeUpdate()
-        } catch (e: Exception) {
-            println(e)
-            flag = 0
-        } finally {
-            return flag == 1
-        }
-    }
-
     // truncateAll delete all contents,
     // but remain to use the same sequence for id generation
     fun truncateAll(): Boolean {
@@ -76,8 +60,6 @@ class SaveDao {
         }
     }
 
-    @Modifying
-    @Transactional
     fun truncateById(id: Long): Boolean {
         var flag: Int = 1 // 1 means true, 0 means false
         try {
