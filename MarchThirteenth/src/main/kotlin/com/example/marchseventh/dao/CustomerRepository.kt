@@ -7,6 +7,11 @@ import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.data.jpa.repository.Modifying
 import org.springframework.data.jpa.repository.Query
 
+/**
+ * WebController manage service with GET, POST, and DELETE so far
+ * @author      Yuanfeng Li
+ * @version     2.0, 03/28/2022
+ */
 @Repository
 interface CustomerRepository : JpaRepository<Customer, Long> {
     // https://www.baeldung.com/spring-data-derived-queries

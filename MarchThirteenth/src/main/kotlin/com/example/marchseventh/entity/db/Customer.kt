@@ -4,6 +4,11 @@ package com.example.marchseventh.entity.db
 import com.fasterxml.jackson.annotation.JsonProperty
 import javax.persistence.*
 
+/**
+ * WebController manage service with GET, POST, and DELETE so far
+ * @author      Yuanfeng Li
+ * @version     2.0, 03/28/2022
+ */
 @Entity
 @Table(name = "customer")   // postgres needs all lowercase, abbreviation for name
 class Customer(

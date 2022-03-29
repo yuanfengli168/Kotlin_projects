@@ -10,6 +10,11 @@ import java.util.*
 import javax.persistence.EntityManager
 import javax.swing.text.html.parser.Entity
 
+/**
+ * WebController manage service with GET, POST, and DELETE so far
+ * @author      Yuanfeng Li
+ * @version     2.0, 03/28/2022
+ */
 @Service
 class SaveService {
 
