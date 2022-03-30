@@ -35,10 +35,26 @@ class WebController {
         return ResponseEntity.ok(mapOf("Message" to "Your request hase inserted to the database!"))
     }
 
+
+
+
+    // customer/All -> 这里就用来和别人的区分
     @RequestMapping(path = ["customers"], method = [RequestMethod.GET])
     fun findAll(): List<*> {
         return saveService.findAll()
+        // TODO: verification
     }
+
+    @RequestMapping(path = ["customers"], method = [RequestMethod.GET], params = ["firstName"])
+    fun findByFirstName(@RequestParam("firstName") firstName: String) = saveService.findByFirstName(firstName)
+
+
+
+
+
+
+
+
 
     @RequestMapping(path = ["customer"], method = [RequestMethod.GET], params = ["id"])
     fun findById(@RequestParam("id") id: Long) = saveService.findById(id)
@@ -46,8 +62,7 @@ class WebController {
     @RequestMapping(path = ["customers"], method = [RequestMethod.GET], params = ["lastName"])
     fun findByLastName(@RequestParam("lastName") lastName: String) = saveService.findByLastName(lastName)
 
-    @RequestMapping(path = ["customers"], method = [RequestMethod.GET], params = ["firstName"])
-    fun findByFirstName(@RequestParam("firstName") firstName: String) = saveService.findByFirstName(firstName)
+
 
     @RequestMapping(path = ["customers"], method = [RequestMethod.DELETE])
     fun truncateAll(): ResponseEntity<*> {

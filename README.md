@@ -99,3 +99,24 @@ Here are two very good resources:
    6. (readings) - Iglesias' chapter 6 - spring cloud and configuration.
    7. (readings) - Researching on spring config: [here](https://spring.io/projects/spring-cloud-config)
    8. (readings) - Researching on spring Consul: [here](https://spring.io/projects/spring-cloud-consul)
+   9. (readings) - good open source java projects: [here](https://github.com/sqshq/piggymetrics)
+
+
+## 0330 - ...: 
+1. reading the continue readings:
+   1. (readings) - Iglesias' Chapter 3 - Creating Restful Services, [here](file:///C:/Users/Jacky/OneDrive/Desktop/02272022%20-%20%E4%BA%BA%E7%94%9F%E6%88%90%E9%95%BF/Backend%20books/Hands-On%20Microservices%20with%20Kotlin%20Build%20reactive%20and%20cloud-native%20microservices%20with%20Kotlin%20using%20Spring%205%20and%20Spring%20Boot...%20(Juan%20Antonio%20Medina%20Iglesias)%20(z-lib.org).pdf)
+      1. remind me the data class, which I did not use that much previously, I am aiming to use data class more in my entity
+            attribute
+      2. remind me about POJO class - (Plain Old Java Objects)
+      3. ??? diff between value vs. path? 
+      4. ??? diff between [RequestMethod.GET] vs. arrayOf(RequestMethod.GET)?
+      5. single responsibility principle. 
+   2. (readings) - Iglesias' Chapter 5 - Reactive repository && from CRUD to REST.
+      1. @PostConstruct
+   3. (readings) - good open source java projects: 
+      1. https://github.com/sqshq/piggymetrics
+2. I realized that kotlin and python helped us save more time on writing code, so that we could focus on the algorithm it self. 
+   - I have decided to pick up the python in 2 weeks, and redo all the previous questions with python again, to learn and 
+   summarize the contents. 
+
+
