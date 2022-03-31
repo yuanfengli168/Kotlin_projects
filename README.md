@@ -114,9 +114,31 @@ Here are two very good resources:
    2. (readings) - Iglesias' Chapter 5 - Reactive repository && from CRUD to REST.
       1. @PostConstruct
    3. (readings) - good open source java projects: 
-      1. https://github.com/sqshq/piggymetrics
+      1. https://github.com/sqshq/piggymetrics, and [chinese version](https://github.com/spring2go/piggymetrics)
+      2. Concepts (I will be focusing on this in next 2 weeks):
+         1. API GateWay - Spring Cloud Zuul (Eureka for Service Discovery, and Ribbon for Load Balancer)
+         2. Auth Service - Password Credentials grant type for users, Client Credentials grant for service-to-service communication.
+         3. Log Analysis - Elk Stack Elasticsearch is a search engine based on the Lucene library. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents.
+         4. Reading Zuul/Eureka/Hystrix from Netflix OSS
+      3. Summary: 
+         1. Read the codes in Account-service, and Auth service
+         2. Notice: domain means POJO with getter and setter in Spring data project. 
+      4. future: 
+         1. read ReadMe 
+         2. relearn projection
 2. I realized that kotlin and python helped us save more time on writing code, so that we could focus on the algorithm it self. 
    - I have decided to pick up the python in 2 weeks, and redo all the previous questions with python again, to learn and 
    summarize the contents. 
+3. 写总结如何可以在语言之间灵活切换而不犯错误？
+   1. Why? 为什么我们要切换语言？ 目的是花更多时间在算法层面。
+   2. 从 设计 的角度去理解，记忆，和想一想。
+
+### Summary: 
+0. previous notes are my activities, the followings are more important!
+1. Read the codes in Account-service, and Auth service
+2. Notice: domain means POJO with getter and setter in Spring data project.
+   1. future:
+       1. read ReadMe
+       2. relearn projection
 
 
