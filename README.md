@@ -141,4 +141,16 @@ Here are two very good resources:
        1. read ReadMe
        2. relearn projection
 
-
+# 04112022 ... : 
+0. debugging piggy metrics: 
+   1. learn to find the appropriate variable
+   2. learn how to use debugger: and there diffs: [debugging process](https://code.visualstudio.com/docs/editor/debugging), 
+   [One Intro Article](https://pawelgrzybek.com/continue-step-over-step-into-and-step-out-actions-in-visual-studio-code-debugger-explained/)
+      1. continue
+      2. step over
+      3. step into 
+      4. step out
+      5. restart
+      6. stop
+      7. hot code replace
+   
