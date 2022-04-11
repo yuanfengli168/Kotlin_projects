@@ -146,11 +146,12 @@ Here are two very good resources:
    1. learn to find the appropriate variable
    2. learn how to use debugger: and there diffs: [debugging process](https://code.visualstudio.com/docs/editor/debugging), 
    [One Intro Article](https://pawelgrzybek.com/continue-step-over-step-into-and-step-out-actions-in-visual-studio-code-debugger-explained/)
-      1. continue
-      2. step over
-      3. step into 
-      4. step out
-      5. restart
+      1. continue - only break points by testers
+      2. step over - in same scope, line by line
+      3. step into - into next function call (e.g. nested loop)
+      4. step out - opposite for No.3
+      5. restart 
       6. stop
-      7. hot code replace
+      7. hot code replace (HCR) - [中文-热代码替换](http://t.zoukankan.com/zyl2016-p-13666945.html), 
+      [热点代码、分层编译、JIT优化](https://wenku.baidu.com/view/f2e54dcf866a561252d380eb6294dd88d0d23db8.html)
    
